@@ -7,7 +7,7 @@ app.use(cors({ origin: "*" }));
 app.use(express.json());
 
 app.get("/api", (req, res) => {
-  res.json({ message: "Hello from Jenkins + EC2!" });
+  res.json({ message: "Hello from Jenkins AUTO DEPLOY!"  });
 });
 
 const PORT = process.env.PORT || 3000;
