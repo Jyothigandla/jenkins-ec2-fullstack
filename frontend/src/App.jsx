@@ -4,7 +4,7 @@ function App() {
   const [msg, setMsg] = useState("Loading...");
 
   useEffect(() => {
-    fetch("http://98.92.113.172:3000/api")
+    fetch("http://98.92.198.73:3000/api")
       .then(res => res.json())
       .then(data => setMsg(data.message))
       .catch(() => setMsg("Backend not reachable"));
@@ -19,4 +19,5 @@ function App() {
 }
 
 export default App;
+
 
